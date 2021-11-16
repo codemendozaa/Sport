@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.sport.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailViewFragment"
+            app:destination="@id/detailViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailViewFragment"
+        android:name="com.example.sport.ui.DetailViewFragment"
+        android:label="fragment_detail_view"
+        tools:layout="@layout/fragment_detail_view" >
+        <argument
+            android:name="strTeam"
+            app:argType="string" />
+        <argument
+            android:name="strTeamBadge"
+            app:argType="string" />
+        <argument
+            android:name="strWebsite"
+            app:argType="string" />
+        <argument
+            android:name="strTwitter"
+            app:argType="string" />
+        <argument
+            android:name="strTeamJersey"
+            app:argType="string" />
+        <argument
+            android:name="strDescriptionES"
+            app:argType="string" />
+        <argument
+            android:name="strTeamLogo"
+            app:argType="string" />
+        <argument
+            android:name="strTeamBanner"
+            app:argType="string" />
+        <argument
+            android:name="strInstagram"
+            app:argType="string" />
+        <argument
+            android:name="intFormedYear"
+            app:argType="string" />
+    </fragment>
+</navigation>
