@@ -13,8 +13,6 @@ interface WebService {
     @GET("lookup_all_teams.php")
     suspend fun getSpanishLigaTeams(@Query("id")id: String): TeamsList
 
-
-
 }
 
 object RetrofitClient {
